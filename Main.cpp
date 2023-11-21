@@ -64,9 +64,6 @@ void select_menu_item(int input) {
     case 3:
       menu_item_3();
       break;
-    case 4:
-      menu_item_4();
-      break;
     default:
       exit(1);
       break;
@@ -79,7 +76,6 @@ void print_main_menu() {
   std::cout << "|\t1. Menu item 1\t\t|\n";
   std::cout << "|\t2. Menu item 2\t\t|\n";
   std::cout << "|\t3. Menu item 3\t\t|\n";
-  std::cout << "|\t4. Menu item 4\t\t|\n";
   std::cout << "|\t5. Exit\t\t\t\t|\n";
   std::cout << "|\t\t\t\t\t\t|\n";
   std::cout << "---------------------------------\n";
@@ -115,11 +111,5 @@ void menu_item_3() {
   std::cout << "\n>> Menu 3\n";
   std::cout << "\nSome code here does something useful\n";
   // you can call a function from here that handles menu 3
-  go_back_to_main();
-}
-void menu_item_4() {
-  std::cout << "\n>> Menu 4\n";
-  std::cout << "\nSome code here does something useful\n";
-  // you can call a function from here that handles menu 4
   go_back_to_main();
 }
